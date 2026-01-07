@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar for that "App" feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+}
+
+.glass-card {
+  @apply bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-lg rounded-2xl;
+}
+
+/* Form Styles */
+.input-primary {
+  @apply w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-200 outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-brand-primary hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-brand-primary/30 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0;
+}
